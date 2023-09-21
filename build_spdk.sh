@@ -10,7 +10,7 @@ pushd spdk || { echo "Can not find spdk directory"; exit; }
 ./configure --enable-debug \
 	--target-arch=nehalem \
 	--without-isal \
-	--with-crypto \
+	--without-crypto \
 	--with-uring \
 	--disable-unit-tests \
 	--disable-tests \
